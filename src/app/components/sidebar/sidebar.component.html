@@ -1,0 +1,24 @@
+<mat-sidenav-container  class="full-height" autosize="true">
+    <mat-sidenav mode="side" opened (click)="toggleSidebar()" [class.opened]="collapse===false">
+        <div mat-menu-item   class="with-icon padded" (click)="$event.stopPropagation()">
+            <mat-icon   >account_box</mat-icon>&nbsp;
+            <span [hidden]="collapse"> Contact </span>
+        </div>
+        <div mat-menu-item   class="with-icon padded" (click)="$event.stopPropagation()">
+            <mat-icon >perm_media</mat-icon>&nbsp;
+            <span [hidden]="collapse"> Pictures </span>
+        </div>
+        <div mat-menu-item   class="with-icon padded" (click)="$event.stopPropagation()">
+            <mat-icon >coronavirus</mat-icon>&nbsp;
+            <span [hidden]="collapse"> Corona</span>
+        </div>
+
+
+    </mat-sidenav>
+
+    
+    <mat-sidenav-content >
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
