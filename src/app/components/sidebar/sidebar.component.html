@@ -1,24 +1,28 @@
-<mat-sidenav-container  class="full-height" autosize="true">
-    <mat-sidenav mode="side" opened (click)="toggleSidebar()" [class.opened]="collapse===false">
-        <div mat-menu-item   class="with-icon padded" (click)="$event.stopPropagation()">
-            <mat-icon   >account_box</mat-icon>&nbsp;
+<mat-sidenav-container class="full-height" autosize="true" fullscreen>
+    <mat-sidenav color="primary" class="sidenav" mode="side" opened (click)="toggleSidebar()"
+        [class.opened]="collapse===false">
+        <div mat-menu-item class="with-icon padded" (click)="$event.stopPropagation()" [routerLink]="['/home']">
+            <mat-icon matTooltip="Home">home</mat-icon>&nbsp;
+            <span [hidden]="collapse"> Home </span>
+        </div>
+        <div mat-menu-item class="with-icon padded" (click)="$event.stopPropagation()" [routerLink]="['/contact']">
+            <mat-icon matTooltip="Contact">account_box</mat-icon>&nbsp;
             <span [hidden]="collapse"> Contact </span>
         </div>
-        <div mat-menu-item   class="with-icon padded" (click)="$event.stopPropagation()">
-            <mat-icon >perm_media</mat-icon>&nbsp;
+        <div mat-menu-item class="with-icon padded" (click)="$event.stopPropagation()"  [routerLink]="['/pictures']">
+            <mat-icon matTooltip="Pictures">perm_media</mat-icon>&nbsp;
             <span [hidden]="collapse"> Pictures </span>
         </div>
-        <div mat-menu-item   class="with-icon padded" (click)="$event.stopPropagation()">
-            <mat-icon >coronavirus</mat-icon>&nbsp;
+        <div mat-menu-item class="with-icon padded" (click)="$event.stopPropagation()"   [routerLink]="['/corona']">
+            <mat-icon matTooltip="Corona">coronavirus</mat-icon>&nbsp;
             <span [hidden]="collapse"> Corona</span>
         </div>
-
-
     </mat-sidenav>
 
-    
-    <mat-sidenav-content >
+
+    <mat-sidenav-content>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 
 </mat-sidenav-container>
+<!-- <mat-sinav-layout></mat-sinav-layout> -->

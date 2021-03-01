@@ -1,8 +1,8 @@
 .full-height {
     height: 100%;
     display: flex;
+    
 }
-
 .opened{
     width: 100px;
 }
@@ -10,8 +10,14 @@
 .with-icon {
     display: flex;
     align-items: center;
+    
 }
 .padded {
     padding: 10px;
 }
+.sidenav{
+    background-color: #600099;
+    color: #f5f1f1fa;
+}
+
 
