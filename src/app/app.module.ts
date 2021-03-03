@@ -12,15 +12,19 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
-
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 // ----------------------------COMPONENTS
 
 import { HomeComponent } from './components/home/home.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PicturesComponent } from './components/pictures/pictures.component';
-import { CoronaComponent } from './components/corona/corona.component'
-
+import { CoronaComponent } from './components/corona/corona.component';
+import { QuoteComponent } from './components/quote/quote.component';
+import { KnowledgeComponent } from './components/knowledge/knowledge.component'
+import {MatTableModule} from '@angular/material/table';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ import { CoronaComponent } from './components/corona/corona.component'
     SidebarComponent,
     ContactComponent,
     PicturesComponent,
-    CoronaComponent
+    CoronaComponent,
+    QuoteComponent,
+    KnowledgeComponent
 
   ],
   imports: [
@@ -42,7 +48,11 @@ import { CoronaComponent } from './components/corona/corona.component'
     LayoutModule,
     MatSidenavModule,
     MatListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCardModule,
+    MatGridListModule,
+    MatTableModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

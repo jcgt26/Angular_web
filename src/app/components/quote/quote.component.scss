@@ -1,0 +1,12 @@
+.container{
+    width: 100%;
+    // background-color: red;
+    display: flex;
+}
+#quote{
+    flex-grow: 3;
+    text-align: center;
+}
+#logos{
+     width: 150px;
+}
