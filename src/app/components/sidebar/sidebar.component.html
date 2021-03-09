@@ -2,7 +2,7 @@
     <mat-sidenav color="primary" class="sidenav" mode="side" opened (click)="toggleSidebar()"
         [class.opened]="collapse===false">
         <div mat-menu-item class="with-icon padded" (click)="$event.stopPropagation()" [routerLink]="['/home']">
-            <mat-icon matTooltip="Home">home</mat-icon>&nbsp;
+            <mat-icon matTooltip="Home">home</mat-icon>&nbsp; <!--Leeres Zeichen-->
             <span [hidden]="collapse"> Home </span>
         </div>
         <div mat-menu-item class="with-icon padded" (click)="$event.stopPropagation()" [routerLink]="['/contact']">
@@ -10,7 +10,7 @@
             <span [hidden]="collapse"> Contact </span>
         </div>
         <div mat-menu-item class="with-icon padded" (click)="$event.stopPropagation()"  [routerLink]="['/pictures']">
-            <mat-icon matTooltip="Pictures">perm_media</mat-icon>&nbsp;
+            <mat-icon matTooltip="Pictures">perm_media</mat-icon>&nbsp; 
             <span [hidden]="collapse"> Pictures </span>
         </div>
         <div mat-menu-item class="with-icon padded" (click)="$event.stopPropagation()"   [routerLink]="['/corona']">

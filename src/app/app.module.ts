@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+
 // ----------------------------COMPONENTS
 
 import { HomeComponent } from './components/home/home.component';
