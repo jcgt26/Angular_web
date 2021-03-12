@@ -1,4 +1,4 @@
-import {Quote} from '../models/Quote'
+import {Quote} from '../models/quote'
 
 export const quote_list: Quote[] =[
      {   text: "The unexamined life is not worth living", author: "Socrates" },

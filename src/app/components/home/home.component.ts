@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 // -----------MODELS
-import { Quote } from '../../models/Quote';
-import { Progress } from '../../models/Progress';
+import { Quote } from '../../models/quote';
+import { Progress } from '../../models/progress';
 
 
 // -----SERVICES
