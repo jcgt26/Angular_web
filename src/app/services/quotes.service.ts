@@ -12,7 +12,6 @@ export class QuotesService {
   constructor() { }
 
   get_quotes(): Observable<Quote[]>{
-    // const quotes = of (quote_list);
     return of (quote_list)
   }
 }

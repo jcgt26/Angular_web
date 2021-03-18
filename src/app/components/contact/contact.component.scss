@@ -1,25 +1,25 @@
 
-.father{
-    background-image: url("../../../assets/cool-background.png");
-    // height: 100%;
+.father-grid{
+    height: 100%;
     width:100%;
     background-size: cover;
-    // background-repeat: no-repeat;
     background-position: center center fixed fixed;
     background-size: 100% auto;
-    
+    // padding: 10px;
 }
 .social{
-    // height: 13vh;
     width: 20vh;
-    border-radius: 100%;
-    text-align: center;
-    overflow: hidden;
+    border-radius: 20%;
     transform: translateY(0px);
+    margin: 30px;
     animation: float 6s ease-in-out infinite;
     box-shadow: 0px 5px 14px 0px rgba(0,0,0,0.6) ;
     box-shadow: border-box;
-    padding:5px;
+    padding:0px;
+}
+.rounded-icons{
+    border-radius: 100%;
+
 }
 
 
@@ -39,7 +39,3 @@
     }
 }
 
-
-.tile{
-    // background-color: red;
-}
